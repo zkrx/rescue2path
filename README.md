@@ -34,6 +34,7 @@ Device       Boot  Start      End  Sectors  Size Id Type
 
 Example output
 ==============
+~~~bash
 Block @ 0x128438200 of size 0x1000 bytes:
 283523  /usr/lib/modules/4.14.87-1-ARCH/kernel/drivers/rtc/rtc-ds1307.ko.gz
 
@@ -68,3 +69,4 @@ Block @ 0x128480200 of size 0x1000 bytes:
 283564  /usr/lib/modules/4.14.87-1-ARCH/kernel/drivers/spi/spi-gpio.ko.gz
 
 [...]
+~~~
