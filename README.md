@@ -1,3 +1,5 @@
+rescue2path
+===========
 My SD card just died. I managed to salvage 99.52% of it
 with the help of ddrescue. However, I didn't know what
 files were lost in the remaining 0.48%.
@@ -6,7 +8,7 @@ This script takes ddrescue's mapfile as an input and
 uses debugfs to find out which files are affected.
 
 Example usage
-~~~~~~~~~~~~~
+=============
 $ sudo ddrescue -R -d -r3 /dev/sdd rpi.img rpi.img.mapfile
 
 # ... after a while ...
@@ -29,7 +31,7 @@ Device       Boot  Start      End  Sectors  Size Id Type
 ./rescue2path.py rpi.img.mapfile /dev/loop0p2 105906176 > /tmp/r2p.log
 
 Example output
-~~~~~~~~~~~~~~
+==============
 Block @ 0x128438200 of size 0x1000 bytes:
 283523  /usr/lib/modules/4.14.87-1-ARCH/kernel/drivers/rtc/rtc-ds1307.ko.gz
 
