@@ -9,6 +9,7 @@ uses debugfs to find out which files are affected.
 
 Example usage
 =============
+~~~bash
 $ sudo ddrescue -R -d -r3 /dev/sdd rpi.img rpi.img.mapfile
 
 # ... after a while ...
@@ -29,6 +30,7 @@ Device       Boot  Start      End  Sectors  Size Id Type
 # loop0p2 is the ext4 partition
 # 105906176 is its offset in bytes (206848 * 512 from fdisk's output above)
 ./rescue2path.py rpi.img.mapfile /dev/loop0p2 105906176 > /tmp/r2p.log
+~~~
 
 Example output
 ==============
