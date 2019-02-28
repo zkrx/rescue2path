@@ -1,6 +1,6 @@
 My SD card just died. I managed to salvage 99.52% of it
 with the help of ddrescue. However, I didn't know what
-files were lost in the 0.48% remaining.
+files were lost in the remaining 0.48%.
 
 This script takes ddrescue's mapfile as an input and
 uses debugfs to find out which files are affected.
